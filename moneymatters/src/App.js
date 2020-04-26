@@ -2,8 +2,8 @@ import React from "react";
 import "./App.css";
 import Dashboard from "./Dashboard";
 import Test from "./components/Test";
-import Goals from "./components/TrackGoals";
-
+import Goals from "./components/FinancialGoals";
+import TrackGoals from "./components/TrackGoals";
 import Signup from "./components/Signup";
 import DetailFinances from "./components/DetailFinances";
 import { Provider } from "react-redux";
@@ -19,6 +19,7 @@ function App() {
 					<Route path='/dashboard' exact component={Dashboard} />
 					<Route path='/expenses' exact component={Test} />
 					<Route path='/goals' exact component={Goals} />
+					<Route path='/trackGoals' exact component={TrackGoals} />
 					<Route path='/signup' exact component={Signup} />
 					<Route path='/login' exact component={Login} />
 					<Route path='/detailFinances' exact component={DetailFinances} />
